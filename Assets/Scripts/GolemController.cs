@@ -32,7 +32,7 @@ public class GolemController : MonoBehaviour
             Quaternion rotation = Quaternion.LookRotation(relativePos);
             transform.rotation = rotation;
 
-            //_rigidbody.AddForce(transform.forward * _golemSpeed, ForceMode.Force);
+
             transform.position += transform.forward * _golemSpeed * Time.fixedDeltaTime;
 
             _animator.SetFloat("Speed", 1f);
